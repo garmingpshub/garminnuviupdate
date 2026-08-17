@@ -1,5 +1,5 @@
-site_name: Garmin Nuvi Map Update
-site_description: Garmin Nuvi Map Update Documentation
+site_name: Garmin Nuvi Documentation
+site_description: Garmin Nuvi Map and Navigation Update Guide
 site_author: Garmin Nuvi
 
 theme:
@@ -37,24 +37,19 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-  favicon: assets/logo.png
-
 nav:
-  - Garmin Nuvi Map Update: index.md
-  
-  - Map Update Guide: map-update-guide.md
+  - Home: index.md
   - Installation: installation.md
-
-  - Articles:
-      - Garmin 1350 Nuvi Update: Articles/index.md
-      - garmin Nuvi Software Update: Articles/garmin-nuvi-software-update.md
-      - Garmin Nuvi Navigation Update: Articles/garmin-nuvi-navigation-update.md
-      - garmin nuvi 1450 update: Articles/garmin-nuvi-1450-update.md
-      - garmin 1300 nuvi update: Articles/garmin-1300-nuvi-update.md
-
-
+  - Activation: activation.md
   - FAQ: faq.md
-  
+  - Map Update Guide: map-update-guide.md
+  - Software Update: software-update.md
+  - Garmin Nuvi Articles:
+      - Garmin Nuvi 1300 Update: Articles/garmin-1300-nuvi-update.md
+      - Garmin Nuvi 1450 Update: Articles/garmin-nuvi-1450-update.md
+      - Garmin Nuvi Navigation Update: Articles/garmin-nuvi-navigation-update.md
+      - Garmin Nuvi Software Update: Articles/garmin-nuvi-software-update.md
+
 extra_css:
   - stylesheets/style.css
 
@@ -64,7 +59,3 @@ markdown_extensions:
   - toc:
       permalink: true
   - fenced_code
-  - attr_list
-  - pymdownx.highlight
-  - pymdownx.tabbed
-  - pymdownx.superfences
