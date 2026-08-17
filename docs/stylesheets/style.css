@@ -1,0 +1,276 @@
+/* Garmin Nuvi Map Update - Custom Theme */
+
+:root {
+  --garmin-blue: #0066cc;
+  --garmin-dark-blue: #003b73;
+  --garmin-light-blue: #eaf5ff;
+  --garmin-yellow: #ffc107;
+  --garmin-green: #16a085;
+  --garmin-text: #263238;
+  --garmin-white: #ffffff;
+}
+
+/* Main page */
+
+.md-main {
+  background: #f5f9ff;
+}
+
+.md-content {
+  color: var(--garmin-text);
+}
+
+/* Main headings */
+
+.md-typeset h1 {
+  color: var(--garmin-dark-blue);
+  font-weight: 800;
+  border-bottom: 4px solid var(--garmin-yellow);
+  padding-bottom: 10px;
+}
+
+.md-typeset h2 {
+  color: var(--garmin-blue);
+  font-weight: 700;
+  border-left: 5px solid var(--garmin-yellow);
+  padding-left: 12px;
+  margin-top: 35px;
+}
+
+.md-typeset h3 {
+  color: var(--garmin-green);
+  font-weight: 700;
+}
+
+/* Header */
+
+.md-header {
+  background: linear-gradient(
+    90deg,
+    #003b73 0%,
+    #0066cc 55%,
+    #00a8e8 100%
+  );
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.md-header__title {
+  font-weight: 700;
+}
+
+/* Navigation */
+
+.md-tabs {
+  background: #0066cc;
+}
+
+.md-tabs__link {
+  font-weight: 600;
+}
+
+.md-tabs__link:hover {
+  color: var(--garmin-yellow);
+}
+
+/* Side navigation */
+
+.md-nav__link {
+  border-radius: 6px;
+  padding: 6px 10px;
+  transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+  background: var(--garmin-light-blue);
+  color: var(--garmin-blue);
+}
+
+.md-nav__link--active {
+  background: #e5f2ff;
+  color: var(--garmin-blue) !important;
+  font-weight: 700;
+}
+
+/* Content links */
+
+.md-typeset a {
+  color: var(--garmin-blue);
+  font-weight: 600;
+}
+
+.md-typeset a:hover {
+  color: #e09b00;
+}
+
+/* Admonition boxes */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 80, 160, 0.08);
+}
+
+/* Note */
+
+.md-typeset .admonition.note {
+  border-color: var(--garmin-blue);
+}
+
+/* Tip */
+
+.md-typeset .admonition.tip {
+  border-color: var(--garmin-green);
+}
+
+/* Warning */
+
+.md-typeset .admonition.warning {
+  border-color: var(--garmin-yellow);
+}
+
+/* Tables */
+
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  background: var(--garmin-white);
+}
+
+.md-typeset table:not([class]) th {
+  background: linear-gradient(
+    90deg,
+    #0066cc,
+    #0088dd
+  );
+  color: white;
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: #eef8ff;
+}
+
+/* Code blocks */
+
+.md-typeset pre {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons */
+
+.md-typeset .md-button {
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.md-typeset .md-button--primary {
+  background: linear-gradient(
+    90deg,
+    #0066cc,
+    #00a8e8
+  );
+  border-color: transparent;
+  color: white;
+}
+
+.md-typeset .md-button--primary:hover {
+  background: linear-gradient(
+    90deg,
+    #003b73,
+    #0066cc
+  );
+  transform: translateY(-2px);
+}
+
+/* Search box */
+
+.md-search__form {
+  border-radius: 10px;
+}
+
+.md-search__input {
+  border-radius: 10px;
+}
+
+/* Footer */
+
+.md-footer {
+  background: linear-gradient(
+    90deg,
+    #003b73,
+    #0066cc
+  );
+}
+
+.md-footer-meta {
+  background: #002d59;
+}
+
+/* Content cards */
+
+.garmin-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px 0;
+  border-top: 5px solid var(--garmin-blue);
+  box-shadow: 0 6px 20px rgba(0, 70, 140, 0.1);
+  transition: all 0.25s ease;
+}
+
+.garmin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 70, 140, 0.16);
+}
+
+/* Hero section */
+
+.garmin-hero {
+  background: linear-gradient(
+    135deg,
+    #003b73,
+    #0066cc,
+    #00a8e8
+  );
+  color: white;
+  padding: 45px 30px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 70, 140, 0.2);
+}
+
+.garmin-hero h1,
+.garmin-hero h2 {
+  color: white;
+  border: none;
+}
+
+.garmin-hero p {
+  color: white;
+  font-size: 1.05rem;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.4rem;
+  }
+
+  .garmin-hero {
+    padding: 30px 20px;
+  }
+
+  .garmin-card {
+    padding: 18px;
+  }
+}
